@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Andromeda Fight</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-wrapper">
+        <canvas id="gameCanvas"></canvas>
+
+        <div id="start-screen" class="screen">
+            <div class="glass-panel">
+                <h1 class="glitch-text">Andromeda<br><span class="cyan">Fight</span></h1>
+                <div class="instructions">
+                    <div class="control-grid">
+                        <p><strong>PC:</strong> WASD + SPACE</p>
+                        <p><strong>MOBILE:</strong> DRAG + FIRE BUTTON</p>
+                        <p><strong>Developer: KISHAN CHAUHAN</strong></p>
+                        <P><strong>🔥</strong></P>
+                    </div>
+                </div>
+                <button id="start-btn" class="action-btn">PLAY</button>
+            </div>
+        </div>
+
+        <div id="hud" class="hidden">
+            <div class="hud-item score-box">
+                <span class="label">NEURAL LINK: SCORE</span>
+                <div id="score-val">00000</div>
+            </div>
+            
+            <button id="pause-btn">PAUSE</button>
+
+            <div class="bottom-hud">
+                <div class="hud-item health-box">
+                    <span class="label">SHIP HEALTH</span>
+                    <div class="bar-bg"><div id="health-fill"></div></div>
+                </div>
+                <button id="mobile-fire-btn">FIRE</button>
+            </div>
+        </div>
+
+        <div id="status-screen" class="screen hidden">
+            <div class="glass-panel">
+                <h2 id="status-title">SYSTEM PAUSED</h2>
+                <button id="resume-btn" class="action-btn">RESUME</button>
+                <button id="restart-btn" class="action-btn hidden">RESTART</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
